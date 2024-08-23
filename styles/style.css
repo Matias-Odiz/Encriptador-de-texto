@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --color-primaria: #000000;
+    --color-secundaria: #F6F6F6;
+    --color-terciaria: #22D4FD;
+    --color-oscuro: #0A3871;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+    color: #000000;
+}
+
+body{
+    box-sizing: border-box;
+    background-color:#F3F5FC;
+    color: var(--color-secundaria);
+}
+
+.presentacion {
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentacion__contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.presentacion__contenido__titulo{
+    font-size: 2rem;
+    font-family: var(--fuente-krona);
+}
+
+
+.presentacion__contenido__texto{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.presentacion__enlaces__subtitulo{
+    font-family: var(--fuente-krona);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.presentacion__enlaces__boton1{
+      display: flex;
+      justify-content: center;
+      border: 2px solid var(--color-terciaria);
+      width: 328px;
+      text-align: center;
+      border-radius: 24px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 21.5px 0;
+      text-decoration: none;
+      color: var(--color-secundaria);
+      font-family: var(--fuente-montserrat);
+      background-color: #0A3871;
+
+}
+.presentacion__enlaces__boton2{
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--color-terciaria);
+    width: 328px;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-secundaria);
+    font-family: var(--fuente-montserrat);
+    background-color: #D8DFE8;
+    
+
+}
+.presentacion__enlaces__boton3{
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--color-oscuro);
+    width: 100%;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10.5px 0;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--color-oscuro);
+    font-family: var(--fuente-montserrat);
+    
+    
+
+}
+
+.Encriptado{
+    width: 400px;
+    height: 90vh;
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #ffffff;
+    border-radius: 32px;
+    color: var(--color-primaria);
+}
+.Encriptado .conteiner h2{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.conteiner{
+    width: 80%;
+    margin: 0 auto;
+
+}
+.input{
+    justify-content:flex-start;
+    text-align: left;
+    text-justify: top;
+    height: 20vh ;
+    padding-bottom: 50vh;
+    font-size: 32px;
+    text-align: left;
+    vertical-align: top;
+    border-style: none;
+    outline: none;
+    background-color:#F3F5FC;
+    overflow: auto; /* Habilita el scroll si el texto supera el área visible */
+    resize: none; /* Evita que se pueda redimensionar */
+    margin: 0 8vw;
+    overflow: hidden;
+}
+.botones{
+    justify-content: center;
+    display: flex;
+    gap: 24px;
+}
+.img{
+    width: 100%;
+    height: 48px;
+    width: 120px;
+}
+.textoBoton{
+    font-size: 16px;
+    padding-left: 19%;
+    padding-bottom: 10px;
+
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .presentacion{
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+
+    }
+
+    .presentacion__contenido{
+        width: auto;
+    }    
+    .Encriptado{
+        width: 80vw;
+        height: auto;
+        justify-content: center;
+        padding: 10px 0px;
+        margin: 10px;
+        padding-left: 5vw;
+
+        
+    }
+    .Encriptado img{
+        display: none;
+    }
+    .botones a{
+        width: 40vw;
+        font-size: 16px;
+    }
+    .textoBoton{
+        justify-content: left;
+        padding-left: 5vw;
+    }
+    .input{
+        height: 10vh ;
+        padding-left: 50px;
+        padding-bottom: 35vh;
+    }
+    
+}
+@media (max-width: 400px) {
+
+    .img{
+        height: 24px;
+        width: 60px;
+        left: 20px;
+    }
+    .presentacion{
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .input{
+        padding: 0;
+        padding-left: 0;
+        padding-bottom: 30vh;
+        padding-top: 5vh;
+        margin: 0;
+    }
+}
